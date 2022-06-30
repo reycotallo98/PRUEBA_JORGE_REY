@@ -1,0 +1,8 @@
+HORASTRABAJADAS = LEER_HORASTRABAJADAS()
+TARIFA = LEER_TARIFA()
+
+if HORASTRABAJADAS > 40:
+    HORASTRABAJADAS -= 40
+    print(f"Su sueldo es de: {(40 * TARIFA) + (HORASTRABAJADAS * (TARIFA + (TARIFA * 0.5)))}")
+else:
+    print(f"Su sueldo es de: {HORASTRABAJADAS * TARIFA}")
